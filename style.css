@@ -1,0 +1,229 @@
+/* font awesome */
+.fa-facebook {
+  color: rgb(149, 171, 186);
+}
+.fas {
+  color: rgb(193, 243, 93);
+  font-size: large;
+}
+.fas.fa-bars {
+  color: white;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+}
+.container {
+  width: 100%;
+  display: flex;
+  padding: 0;
+  margin: 0 auto;
+}
+.container .nav-wrapper {
+  width: 100%;
+  height: 55px;
+  background-color: rgb(92, 148, 197);
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+
+  z-index: 50;
+}
+
+.nav-wrapper .top-nav {
+  position: relative;
+}
+.nav-wrapper .logo-icon a {
+  float: left;
+  padding: 10px 20px;
+  font-size: 30px;
+  color: whitesmoke;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 600;
+}
+.top-nav .logo-2 {
+  display: none;
+}
+.top-nav ul {
+  display: flex;
+  display: block;
+  float: right;
+  margin-right: 20px;
+}
+.top-nav ul li {
+  flex: auto;
+  display: inline-block;
+  margin: 15px 2px;
+  border: none;
+  text-decoration: none;
+  display: inline-block;
+}
+.top-nav ul li a {
+  height: max-content;
+  padding: 20px 15px;
+  font-size: 20px;
+  font-weight: 800;
+  color: whitesmoke;
+  text-decoration: none;
+  font-size: 16px;
+  letter-spacing: 1px;
+  border-radius: 15px 5px;
+}
+.top-nav ul li a > span {
+  padding-right: 10px;
+}
+.top-nav ul li a:hover {
+  background-color: white;
+  color: black;
+}
+.container .nav-header {
+  background-image: url('/assets/bg-sepatu.jpg');
+  width: 100%;
+  height: 600px;
+  margin-top: 55px;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.container .nav-header .text-wrapper {
+  margin: 0 auto;
+  text-align: right;
+  color: whitesmoke;
+  margin-right: 20px;
+  margin-top: 40px;
+  letter-spacing: 3px;
+}
+.container .main-content {
+  background: rgb(244, 245, 247);
+  width: 100%;
+  overflow: hidden;
+}
+
+.main-content .main-title-wrapper {
+  margin-top: 20px;
+  color: rgb(41, 36, 36);
+  letter-spacing: 3px;
+  text-align: center;
+}
+.main-content .main-title-wrapper h3 {
+  height: 2px;
+  margin-top: 10px;
+
+  width: 20%;
+  background-color: rgb(221, 227, 231);
+}
+.main-content .product-wrapper {
+  width: 100%;
+  margin-top: 20px;
+  margin: 10px 100px;
+  display: flex;
+  flex: auto;
+  flex-wrap: wrap;
+
+  position: relative;
+}
+.main-content .product-wrapper .product-card {
+  box-shadow: 1px 1px 1px 1px rgb(116, 108, 108);
+
+  width: 20%;
+  border-radius: 2px 2px;
+  padding: 3px 3px;
+  overflow: hidden;
+  background-color: white;
+  margin: 10px 10px;
+  height: 300px;
+}
+.main-content .product-wrapper .product-card .img-product img {
+  width: 100%;
+  height: 220px;
+  padding: 1px 1px;
+}
+.product-card .img-product p {
+  position: relative;
+  margin-left: 10px;
+  font-size: 15px;
+}
+.product-card .img-product h2 {
+  position: relative;
+}
+.product-card .btn-beli {
+  border: none;
+  float: right;
+  padding: 5px 20px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  background-color: rgb(92, 148, 197);
+  text-decoration: none;
+}
+
+.container .footer-wrapper {
+  width: 100%;
+  height: max-content;
+  overflow: auto;
+  display: flex;
+
+  margin-top: 20px;
+  background-color: rgb(92, 148, 197);
+}
+.container .footer-wrapper .logo-footer {
+  width: 50%;
+  flex-basis: 1;
+  color: white;
+  padding-top: 20px;
+}
+.container .footer-wrapper .content-wrapper {
+  color: white;
+  padding: 20px 20px;
+}
+.container .footer-wrapper .content-wrapper ul {
+  list-style: none;
+  margin: 5px 10px;
+  letter-spacing: 2px;
+}
+.container .footer-wrapper .content-wrapper ul li a {
+  text-decoration: none;
+}
+.container .footer-wrapper .content-wrapper ul li a > span {
+  padding-right: 10px;
+  padding-bottom: 10px;
+  font-size: 20px;
+  color: white;
+}
+/* setting ukuran hp */
+@media (max-width: 670px) {
+  .main-content .product-wrapper .product-card {
+    width: 100%;
+  }
+  .main-content .product-wrapper {
+    margin: 0;
+  }
+  .nav-wrapper .logo-icon a {
+    clear: left;
+    text-align: center;
+  }
+  .top-nav ul {
+    display: none;
+  }
+  .top-nav .logo-2 {
+    display: inline-block;
+    float: right;
+    padding: 15px 20px;
+  }
+  .container .footer-wrapper .logo-footer {
+    padding: 10px 10px;
+  }
+  .container .footer-wrapper .content-wrapper {
+    padding: 10px 10px;
+  }
+}
+@media (min-width: 1024px) {
+  .main-content .product-wrapper {
+    margin-left: 25px;
+  }
+}
